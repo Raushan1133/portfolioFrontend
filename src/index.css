@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&display=swap');
+
+
+/* Color variables */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+} 
+
+:root{
+  /* background */
+  --main-bg:hsl(222.2 84% 4.9%);
+  --secondary-bg:hsl(217.2 32.6% 17.5%);
+
+  /* cards */
+  --card-bg:#0F172A;
+  --card-border:rgb(30 41 59);
+
+  /* Texts */
+  --main-text:#467BFF;
+  --secondary-text:rgb(248 250 252);
+  --para-text:#64748b;
+}
+
+body,html{
+  font-size:1rem;
+  /* font-family: var(--roboto-font); */
+  font-weight: 300;
+  /* scroll-behavior: smooth; */
+}
+
+@media(max-width:992px){
+  body,html{
+      font-size: 0.875rem;
+  }
+}
+
+/* Headline Tags */
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+p{
+  font-size: 1rem;
+}
+
+a{
+  color: var(--light-black);
+  text-decoration: none;
+  -webkit-transition:all 400ms ease-in-out ;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition:all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+/* Custom scrollbar */
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-track{
+  background: var(--secondary-text);
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--main-text);
+  border-radius: 50%;
+}
+
+/* Common Button */
+.main-btn{
+  color: var(--secondary-text);
+  background: var(--main-text);
+  border:2px solid;
+  border-color: var(--main-text);
+  padding: 5px 15px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+  transition: all .5s ease-in-out;
+  /* border-radius: 9999px; */
+
+}
+
+.main-btn:hover,
+.main-btn:focus{
+  background-color: transparent;
+  color: #467BFF;
+  border-color: #467BFF;
+}
+
+.btn-red{
+  color: var(--white);
+  background-color: var(--light-red);
+  border-color: var(--light-red);
+  
+}
+
+.btn-red:hover,
+.btn-red:focus{
+  color: var(--light-red);
+  background-color: transparent;
+  border-color: var(--light-red);
+}
+
+.card-btn{
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color:#094eff;
+  color:var(--secondary-text);
+  border-radius: 9999px;
+  text-align: center;
+}
+
+.card-btn:hover{
+  background-color: var(--main-text);
+}
+
+@media (max-width:992px) {
+  .main-btn{
+    padding: 5px 15px;
+  }
+}
