@@ -30,7 +30,7 @@ const Section5 = () => {
             <div className="timeline-content">
             <h2>Intermediate</h2>
               <p>R.N College, Hajipur ,Vaishali, Bihar 844102</p>
-              <p>CGPA - 68.8%</p>
+              <p>CGPA - 7.24</p>
             </div>
             </div>
           </div>
@@ -44,7 +44,7 @@ const Section5 = () => {
             <div className="timeline-content">
             <h2>High School</h2>
               <p>M.R. High School ,Chandi, Hajipur ,Vaishali, Bihar 844102</p>
-              <p>CGPA - 76.4%</p>
+              <p>CGPA - 8.042</p>
             </div>
             </div>
           </div>

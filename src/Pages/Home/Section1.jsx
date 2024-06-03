@@ -25,7 +25,7 @@ const Section1 = () => {
             /></h3>
 
             <div className='buttons d-flex justify-content-between mt-5'>
-              <a href='#' className='main-btn'>Download CV <i class="fa-regular fa-file ms-2"></i></a>
+              <a href='src\assets\skills\Adaptability.jpg' download="Raushan-resume" className='main-btn'>Download CV <i className="fa-regular fa-file ms-2"></i></a>
               <a href='#contact' className='main-btn ms-md-5 ms-xxl-0'>Hire Me</a>
             </div>
           </Col>

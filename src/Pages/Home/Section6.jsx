@@ -7,7 +7,8 @@ import { useGetViewerInfoMutation } from '../../services/viewerAuthApi';
 
 
 const Section6 = () => {
-  const [getViewerInfo] = useGetViewerInfoMutation();
+  const [getViewerInfo ] = useGetViewerInfoMutation();
+  const [loading, setLoading] =useState(false);
 
   const [error,setError] = useState({
     status:false,
@@ -27,7 +28,11 @@ const Section6 = () => {
     }
 
     if(actualData.firstName && actualData.lastName && actualData.email && actualData.subject && actualData.messege){
-    await getViewerInfo(actualData);
+      setLoading(true);
+  const res =  await getViewerInfo(actualData);
+  if(res){
+    setLoading(false);
+  }
      document.getElementById('form').reset();
      setError({
       status:true,
@@ -97,9 +102,12 @@ const Section6 = () => {
           </Col>
           <Row >
           <Col className='d-flex justify-content-md-end justify-content-center'>
-          {
+            {
+              loading ? <Col sm={6} ><Alert variant='primary'>Sending...</Alert> </Col> : error.status ? <Col sm={6} ><Alert variant={error.variant}>{error.messege}</Alert> </Col> :""
+            }
+          {/* {
             error.status ? <Col sm={6} ><Alert variant={error.variant}>{error.messege}</Alert> </Col> :""
-          }
+          } */}
           </Col>
           </Row>
           </Row>
