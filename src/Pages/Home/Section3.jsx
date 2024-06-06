@@ -40,7 +40,7 @@ const Section3 = () => {
           Some quick example text to build on the card title and make up the bulk of the card's content.
         </MDBCardText>
         <div className='p-3 text-center'>
-        <Link className='card-btn mt-5'><span>View</span><i class="fa-solid fa-eye ms-3"></i></Link>
+        <Link className='card-btn mt-5'><span>View</span><i className="fa-solid fa-eye ms-3"></i></Link>
         </div>
       </MDBCardBody>
       </div>
@@ -62,7 +62,7 @@ const Section3 = () => {
           Some quick example text to build on the card title and make up the bulk of the card's content.
         </MDBCardText>
         <div className='p-3 text-center'>
-        <Link className='card-btn mt-5'><span>View</span><i class="fa-solid fa-eye ms-3"></i></Link>
+        <Link className='card-btn mt-5'><span>View</span><i className="fa-solid fa-eye ms-3"></i></Link>
         </div>
       </MDBCardBody>
       </div>
@@ -84,7 +84,7 @@ const Section3 = () => {
           Some quick example text to build on the card title and make up the bulk of the card's content.
         </MDBCardText>
         <div className='p-3 text-center'>
-        <Link className='card-btn mt-5'><span>View</span><i class="fa-solid fa-eye ms-3"></i></Link>
+        <Link className='card-btn mt-5'><span>View</span><i className="fa-solid fa-eye ms-3"></i></Link>
         </div>
       </MDBCardBody>
       </div>
@@ -106,7 +106,7 @@ const Section3 = () => {
           Some quick example text to build on the card title and make up the bulk of the card's content.
         </MDBCardText>
         <div className='p-3 text-center'>
-        <Link className='card-btn mt-5'><span>View</span><i class="fa-solid fa-eye ms-3"></i></Link>
+        <Link className='card-btn mt-5'><span>View</span><i className="fa-solid fa-eye ms-3"></i></Link>
         </div>
       </MDBCardBody>
       </div>

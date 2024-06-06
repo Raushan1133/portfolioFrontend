@@ -119,7 +119,7 @@ const Section4 = () => {
                 <Card className="card">
                   <Card.Img
                     variant="top"
-                    fluid
+                    
                     className="img img-fluid"
                     src={Networking}
                   />
@@ -170,7 +170,7 @@ const Section4 = () => {
             <Row>
           <Col className="d-flex justify-content-center">
             <Link className="card-btn" ref={btn}  onClick={()=>{setValue(!value)}}>
-              View Analysis<i class="fa-solid fa-eye ms-2"></i>
+              View Analysis<i className="fa-solid fa-eye ms-2"></i>
             </Link>
           </Col>
         </Row>
@@ -289,7 +289,7 @@ const Section4 = () => {
         value?<Skills/>:null
       }
       {/* {
-        value?btn.current.innerHTML='Hide Analytics': btn.current.innerHTML='Show Analytics <i class="fa-solid fa-eye ms-2">'
+        value?btn.current.innerHTML='Hide Analytics': btn.current.innerHTML='Show Analytics <i className="fa-solid fa-eye ms-2">'
       } */}
       
      

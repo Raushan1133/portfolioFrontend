@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const viewerAuthApi = createApi({
   reducerPath: 'viewerAuthApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'https://portfolio-j9pb.onrender.com' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://portfolioserver-nuq4.onrender.com' }),
   endpoints: (builder) => ({
     getViewerInfo: builder.mutation({
       query: (viewer) => {

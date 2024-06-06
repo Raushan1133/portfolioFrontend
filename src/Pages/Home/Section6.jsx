@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
-// import { MDBBtn, MDBCard, MDBCardBody, MDBCardHeader, MDBCheckbox, MDBCol, MDBInput, MDBListGroup, MDBListGroupItem, MDBRow, MDBTextArea, MDBTypography } from 'mdb-react-ui-kit';
 import {Alert, Col, Container, Row} from 'react-bootstrap'
 import { useGetViewerInfoMutation } from '../../services/viewerAuthApi';
-// import { MDBInput,  MDBBtn, MDBValidation, MDBValidationItem, MDBTextArea } from 'mdb-react-ui-kit';
 
 
 
@@ -30,6 +28,7 @@ const Section6 = () => {
     if(actualData.firstName && actualData.lastName && actualData.email && actualData.subject && actualData.messege){
       setLoading(true);
   const res =  await getViewerInfo(actualData);
+  console.log(res);
   if(res){
     setLoading(false);
   }
@@ -63,12 +62,12 @@ const Section6 = () => {
           <h6>Social Platforms</h6>
           <Col className='social-icons mt-3'>
       <ul>
-      <li><a href="https://wa.me/6299755934" rel='noreferrer' target='_blank'><i class="fa-brands fa-whatsapp" ></i></a></li>
-        <li><a target='_blank' rel='noreferrer' href="https://www.instagram.com/sde_raushan?igsh=MXU0dWxweW5sNXJ0Zw=="><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="https://www.facebook.com/raushankashu.kashu" target='_blank' rel='noreferrer'><i class="fa-brands fa-facebook"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/raushan-yaduvanshi-264607277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' rel='noreferrer'><i class="fa-brands fa-linkedin"></i></a></li>
-        <li><a href="https://www.github.com/Raushan1133" target='_blank' rel='noreferrer'><i class="fa-brands fa-github"></i></a></li>
-        <li><a href="https://x.com/sderaushan?t=jQaGFCz9IGKMy-LRiYaSzw&s=09" rel='noreferrer' target='_blank'><i class="fa-brands fa-square-x-twitter" ></i></a></li>
+      <li><a href="https://wa.me/6299755934" rel='noreferrer' target='_blank'><i className="fa-brands fa-whatsapp" ></i></a></li>
+        <li><a target='_blank' rel='noreferrer' href="https://www.instagram.com/sde_raushan?igsh=MXU0dWxweW5sNXJ0Zw=="><i className="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/raushankashu.kashu" target='_blank' rel='noreferrer'><i className="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/raushan-yaduvanshi-264607277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' rel='noreferrer'><i className="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://www.github.com/Raushan1133" target='_blank' rel='noreferrer'><i className="fa-brands fa-github"></i></a></li>
+        <li><a href="https://x.com/sderaushan?t=jQaGFCz9IGKMy-LRiYaSzw&s=09" rel='noreferrer' target='_blank'><i className="fa-brands fa-square-x-twitter" ></i></a></li>
       </ul>
       </Col>
       </Col>
